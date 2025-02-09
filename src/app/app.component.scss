@@ -1,0 +1,17 @@
+
+
+.main-container {
+
+  display: flex;
+
+
+  app-sidebar {
+    flex: 0 0 20%;
+    border-right: 1px solid #eee;
+  }
+
+  app-home {
+    flex: 1;
+    overflow: auto;
+  }
+}

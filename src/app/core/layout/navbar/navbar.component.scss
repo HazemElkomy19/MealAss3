@@ -1,0 +1,35 @@
+@import '../../../../_variables.scss';
+
+.home {
+  padding: 20px;
+
+  h1 {
+    text-align: center;
+    color: #ff6b35;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    .category-link {
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: $secondry-color;
+      color: $main-color;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover, &.active {
+        background: $main-color;
+        color: $secondry-color;
+      }
+    }
+  }
+
+}

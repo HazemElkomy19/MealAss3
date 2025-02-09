@@ -1,0 +1,17 @@
+@use './_variables.scss';
+@use './inheritence.scss';
+
+
+
+
+
+body {
+  font-family: 'Comic Neue', cursive;
+
+}
+
+h1{
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 600;
+}

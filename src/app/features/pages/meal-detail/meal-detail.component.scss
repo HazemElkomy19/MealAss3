@@ -1,0 +1,64 @@
+@import '../../../../_variables.scss';
+@import '../../../../_inheritence.scss';
+.container{
+  @extend %common-grid;
+  grid-template-columns: repeat(3, 1fr);
+
+
+  .info{
+    margin-left: 20px;
+
+    img{
+      width: 100%;
+      border-radius: 10px;
+      border-style: solid;
+      border: none;
+    }
+    .anchors{
+      margin-top: 30px;
+      .anchor-1{
+        background-color: red;
+        @extend %anchor-meal-detail;
+      }
+
+      .anchor-2{
+        background-color: $green-color;
+        @extend %anchor-meal-detail;
+      }
+    }
+  }
+  .info-2{
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+  .table{
+    margin-top: 80px;
+    background-color: $secondry-color;
+    border: 1px solid $secondry-color;
+    margin-right: 10px;
+    box-shadow: $shadow-color;
+    height: 450px;
+    padding: 14px;
+    padding-bottom:40px ;
+    border-radius: 10px;
+    .ingredients-hr{
+      border: 3px solid $grey-color;
+    }
+    h3{
+      font-size: $text-size;
+      font-weight: $text-weight;
+    }
+    .ingredient-item{
+      border-bottom: 1px solid $grey-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &.no-border {
+        border-bottom: none;
+      }
+    }
+
+
+  }
+}
+

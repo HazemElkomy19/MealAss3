@@ -1,0 +1,19 @@
+
+
+
+<div class="home">
+  <h1>Learn, Cook, Eat Your Food</h1>
+
+  <div class="categories">
+    <a class="category-link"
+    routerLink="/" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }">All</a>
+    @for (category of categories; track $index) {
+
+      <a class="category-link" [routerLink]="['/category', category.strCategory]" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }">
+        {{ category.strCategory }}
+      </a>
+    }
+  </div>
+
+
+</div>

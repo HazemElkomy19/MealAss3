@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="info">
+    <h1>{{ meal.strMeal }}</h1>
+    <img [src]="meal.strMealThumb" alt="{{ meal.strMeal }}" />
+    <div class="anchors">
+      @if(meal.strYoutube){
+        <a class="anchor-1"  [href]="meal.strYoutube" target="_blank">
+         <i class=" fa-brands fa-youtube"></i> YouTube</a>
+      }
+
+      @if (meal.strSource) {
+        <a class="anchor-2" [href]="meal.strSource" target="_blank">
+          <i class="fa-solid fa-globe"></i> Source</a>
+      }
+    </div>
+
+
+
+  </div>
+
+  <div class="info-2">
+    <p>{{ meal.strInstructions }}</p>
+  </div>
+
+  <div class="table">
+    <h3>Ingredients</h3>
+    <hr class="ingredients-hr">
+
+
+    <div
+      *ngFor="let item of meal.ingredients; let isLast = last; trackBy: trackByIndex"
+      class="ingredient-item"
+      [ngClass]="{ 'no-border': isLast }"
+    >
+      <p>{{ item.ingredient }}</p>
+      <p>{{ item.measurement }}</p>
+    </div>
+  </div>
+
+</div>

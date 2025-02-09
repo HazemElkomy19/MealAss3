@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+%common-grid{
+  display: grid;
+  width: 100%;
+  gap: 30px;
+}
+
+
+%flex{
+  display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+%anchor{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 13px;
+      list-style: none;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bolder;
+      margin-bottom:20px ;
+      box-shadow: $shadow-color;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+%anchor-meal-detail{
+  text-decoration: none;
+        padding: 10px;
+        color: $secondry-color;
+        border-radius: 5px;
+        margin-right:10px ;
+        font-weight: $text-weight;
+}
+
+%hover{
+  transform: $translate-y-5px;
+        box-shadow: $shadow-color-hover;
+}

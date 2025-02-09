@@ -1,0 +1,46 @@
+@import '../../../../_variables.scss';
+@import '../../../../_inheritence.scss';
+.footer {
+  background: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+
+  p{
+    text-align: center;
+    color: $grey-color;
+
+    border-top: 1px $grey-color solid;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    font-weight: 600;
+
+  }
+
+  .container {
+    font-weight: 600;
+    font-size: 24px;
+    width: 80%;
+    margin: auto ;
+    @extend %flex;
+    padding: 40px 30px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 40px;
+      }
+
+
+    }
+
+
+
+    .route {
+      color: #007bff;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="meals-grid">
+@for(meal of meals; track $index){
+
+    <div class="meal-card">
+      <img [src]="meal.strMealThumb" [alt]="meal.strMeal">
+      <h3>{{meal.strMeal}}</h3>
+      @if (meal.strArea) {
+        <p class="area"> <i class="fa-solid fa-globe"></i> {{meal.strArea}}</p>
+      }
+
+      <a [routerLink]="['/meal', meal.idMeal]" class="view-recipe">View Recipe</a>
+    </div>
+
+
+
+}
+</div>
